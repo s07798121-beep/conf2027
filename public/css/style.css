@@ -1,0 +1,34 @@
+/* ==================== БАЗОВЫЕ СТИЛИ ==================== */
+
+body {
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+}
+
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  font-size: 0.85em;
+}
+
+/* ==================== TODO: АНИМАЦИИ ==================== */
+/* TODO: transition для .btn, .form-control, .nav-link, .card */
+/* TODO: .btn:hover (translateY + box-shadow) */
+/* TODO: .form-control:focus (border-color + box-shadow) */
+/* TODO: @keyframes fadeInUp (появление карточек) */
+/* TODO: @keyframes slideDown (flash-сообщения) */
+/* TODO: @keyframes pulse (бейдж «Новая») */
+/* TODO: @media (prefers-reduced-motion: reduce) */
+
+/* ==================== TODO: АДАПТИВ 390×844 ==================== */
+/* TODO: .btn { min-height: 44px } */
+/* TODO: @media (max-width: 576px) {
+  .card { margin-bottom: 1rem; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  .d-flex.gap-2 { flex-direction: column; }
+  .d-flex.gap-2 .btn { width: 100%; }
+} */

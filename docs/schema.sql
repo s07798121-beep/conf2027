@@ -1,0 +1,3 @@
+-- TODO: создать SQL-дамп структуры БД
+-- TODO: CREATE TABLE users, rooms, requests с FOREIGN KEY
+-- TODO: сохранить в docs/schema.sql

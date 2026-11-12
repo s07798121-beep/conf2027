@@ -1,0 +1,37 @@
+<%- include('header') %>
+
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+  <!-- TODO: заголовок (isAdmin ? 'Панель администратора' : 'Мои заявки') + счётчик -->
+  <h2 class="mb-0">Заявки</h2>
+
+  <!-- TODO: кнопка «+ Новая заявка» (только для пользователя) -->
+</div>
+
+<!-- TODO: пустое состояние -->
+
+<div class="row">
+  <% requests.forEach(r => { %>
+    <div class="col-md-6 col-12 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start">
+            <h5 class="card-title mb-1"><%= r.room_name %></h5>
+            <!-- TODO: бейдж статуса (цвет через тернарный оператор) -->
+          </div>
+
+          <p class="text-muted small mb-2"><%= r.room_type %></p>
+
+          <!-- TODO: ФИО и логин (только для админа) -->
+
+          <p class="mb-1"><b>Дата:</b> <%= r.date_start %></p>
+          <p class="mb-2"><b>Оплата:</b> <%= r.payment %></p>
+
+          <!-- TODO: ссылка «Подробнее» на /request/:id -->
+          <!-- TODO: форма смены статуса (только для админа) -->
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('footer') %>
